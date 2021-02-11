@@ -19,21 +19,202 @@
     <header class="header">
       <div class="container">
         <div class="header__row">
-          <div class="logo-block"><a class="logo" href="#">
-              <svg class="logo-gp">
-                <use href="img/sprites/sprite.svg#logo-gp"></use>
-              </svg>
-              <svg class="logo-card">
-                <use href="img/sprites/sprite.svg#logo-card"></use>
-              </svg></a></div>
+          <button class="button-burger"><span class="top"></span><span class="mid"></span><span class="bot"></span></button><a class="logo" href="index.html"><b>МЕТ ПРОМ ЛОМ</b><span>Прием металлолома</span></a>
+          <div class="header__nav">
+            <nav class="nav">
+              <ul>
+                    <li><a href="uslugi.html"><span>Услуги</span></a></li>
+                    <li><a href="ceny.html"><span>Цены</span></a></li>
+                    <li><a href="akcii.html"><span>Акции</span></a></li>
+                    <li><a href="kontakty.html"><span>Контакты</span></a></li>
+              </ul>
+            </nav>
+            <button class="button">Оставить заявку</button><a href="tel:79266977249">+7 926 697-72-49</a>
+          </div><a class="header__row-img" href="tel:79266977249"> <img src="img/header/tel.png" alt="Позвонить на номер: +7 926 697-72-49" title="Позвонить на номер: +7 926 697-72-49"></a>
         </div>
       </div>
     </header>
     <div class="modal-overlay"></div>
+    <div class="heading"> 
+      <div class="container"> 
+        <h1 class="title">Кто шагает дружно в ряд? <br>Это – смена комсомола,<br> идет сдавать металлолом!</h1>
+        <button class="button button--red">сдать металлолом</button>
+      </div>
+    </div>
+    <main> 
+      <div class="advantages"> 
+        <ul class="container"> 
+                <li class="advantages__item"> <b>6</b><span>лет на рынке</span></li>
+                <li class="advantages__item"> <b>5 680</b><span>довольных клиентов</span></li>
+                <li class="advantages__item"> <b>32</b><span> машины в наличии,<br>готовые к работе</span></li>
+                <li class="advantages__item"> <b>780</b><span>тонн металлолома принято<br>за 2019 год</span></li>
+        </ul>
+      </div>
+      <section class="where">
+        <div class="where__section">
+          <div class="container"> 
+            <h2 class="title title--red"> Где сдать металлолом выгодно?</h2>
+            <div class="where__quote">
+              <p>Металлические конструкции, детали спецтехники, старые автомобили, промышленное оборудование, различные станки и агрегаты, которые уже не эксплуатируются по назначению и просто занимают место – как это всё правильно утилизировать? Не собирайте хлам у себя дома, в гараже или на складе, обращайтесь в компанию МЕТПРОМЛОМ. </p>
+              <div class="where__quote-img"> <img src="img/where/foto.jpg" alt="Разгрузка вагонов с металлоломом"></div>
+            </div>
+          </div>
+        </div>
+        <div class="services">
+          <div class="container"> 
+            <h2 class="title title--red">какие услуги мы оказываем</h2>
+            <div class="swiper-container" id="services__list"> 
+              <div class="swiper-wrapper services__list">
+                      <div class="swiper-slide">
+                        <div class="services__item">
+                          <div class="services__item-img"><img src="img/services/gornilo.png" alt=""></div><span>Прием черного металлолома</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="services__item">
+                          <div class="services__item-img"><img src="img/services/zoloto.png" alt=""></div><span>Прием цветного металлолома</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="services__item">
+                          <div class="services__item-img"><img src="img/services/relsa.png" alt=""></div><span>Прием других металлов</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="services__item">
+                          <div class="services__item-img"><img src="img/services/track.png" alt=""></div><span>Демонтаж <br>и вывоз металла</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="services__item">
+                          <div class="services__item-img"><img src="img/services/rezka.png" alt=""></div><span>Демонтаж и резка металлоконструкций</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="services__item">
+                          <div class="services__item-img"><img src="img/services/provod.png" alt=""></div><span>Прием кабельного лома</span>
+                        </div>
+                      </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="calc">
+        <div class="container">
+          <div class="calc__left">
+            <h2 class="title">Расчет стоимости</h2>
+            <div class="calc__inputs">
+              <div class="input"><span>Выберите вид лома </span>
+                <select>
+                  <option>Металл1</option>
+                  <option>Металл2</option>
+                  <option>Металл3</option>
+                  <option>Металл4</option>
+                  <option>Металл5</option>
+                  <option>Металл6</option>
+                </select>
+              </div>
+              <div class="input"><span>Введите вес лома (кг)</span>
+                <input type="text" placeholder="Вес лома (кг)">
+              </div>
+            </div>
+            <button class="button button--red">Рассчитать стоимость</button>
+          </div>
+          <div class="calc__right"> <b>Вы заработаете:</b><strong>120 000</strong>
+            <button class="button button--red">Оставить заявку</button>
+          </div>
+        </div>
+      </section>
+      <section class="add">
+        <div class="container">
+          <h2 class="title title--red">наши преимущества</h2>
+          <ul class="add__list">
+                  <li class="add__item">
+                    <div class="add__item-img">
+                      <div class="add__item-lg"><img src="img/add/zvezda-lg.svg" alt=""></div>
+                      <div class="add__item-sm"><img src="img/add/zvezda-sm.svg" alt="" style="width:138px"></div>
+                    </div><b>Расскажем, как формируется цена на&nbsp;металлолом</b>
+                  </li>
+                  <li class="add__item">
+                    <div class="add__item-img">
+                      <div class="add__item-lg"><img src="img/add/zvezda-lg.svg" alt=""></div>
+                      <div class="add__item-sm"><img src="img/add/zvezda-sm.svg" alt="" style="width:152px"></div>
+                    </div><b>Мы заинтересованы в&nbsp;продолжительном сотрудничестве</b>
+                  </li>
+                  <li class="add__item">
+                    <div class="add__item-img">
+                      <div class="add__item-lg"><img src="img/add/zvezda-lg.svg" alt=""></div>
+                      <div class="add__item-sm"><img src="img/add/zvezda-sm.svg" alt="" style="width:193px"></div>
+                    </div><b>Предлагаем выгодные условия сдачи крупных объемов металлолома</b>
+                  </li>
+          </ul>
+        </div>
+      </section>
+      <section class="work">
+        <div class="container">
+          <h2 class="title title--red">как мы работаем</h2>
+          <ul class="work__list">
+                  <li class="work__item"><b>1</b>
+                    <div class="work__item-img"><img src="img/work/flag.svg" alt=""></div><span>Позвоните или напишите нам и оставьте заявку на прием металла.</span><small>Цены можно узнать у оператора или посмотреть <a href="#">здесь.</a></small>
+                  </li>
+                  <li class="work__item"><b>2</b>
+                    <div class="work__item-img"><img src="img/work/flag.svg" alt=""></div><span>Дождитесь транспорт и нашего менеджера.</span><small>Мы приедем в течение 24 часов.</small>
+                  </li>
+                  <li class="work__item"><b>3</b>
+                    <div class="work__item-img"><img src="img/work/flag.svg" alt=""></div><span>Сразу же получите полный расчет за сдачу металла!</span><small>Самая выгодная цена на лом у нас!</small>
+                  </li>
+          </ul>
+        </div>
+      </section>
+      <section class="questions"> 
+        <div class="container"> 
+          <div class="questions__right">
+            <h2 class="title title--red">Остались вопросы?</h2><b class="questions__subtitle">Мы предоставим вам консультацию, расскажем, как формируется цена на металлолом и от чего она зависит</b>
+            <div class="questions__inputs"> 
+              <div class="input"><span>Введите ваше имя</span>
+                <input type="text">
+              </div>
+              <div class="input"><span>Введите ваш номер телефона</span>
+                <input type="text">
+              </div>
+            </div>
+            <div class="questions__block">
+              <button class="button button--red">Оставить заявку</button><small>Нажимая на кнопку «Оcтавить заявку», <br>я подтверждаю, что ознакомился с соглашением <br> на обработку <a href="#">персональных данных</a></small>
+            </div>
+          </div><span class="title questions__bottom">И жизнь хороша,и жить хорошо</span>
+        </div>
+      </section>
+      <section class="test"> 
+        <div class="container">
+          <h2 class="title title--red">Заголовок (SEO-ТЕКСТ)</h2>
+          <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют от нас анализа систем массового участия. Разнообразный и богатый опыт новая модель организационной деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.</p>
+          <div class="test__block">
+            <p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что сложившаяся структура организации в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют определения и уточнения форм развития. <br> Таким образом новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Таким образом сложившаяся структура организации в значительной степени обуславливает создание направлений прогрессивного развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки дальнейших направлений развития.</p>
+            <div class="test__block-img"> <img src="img/test/test.jpg" alt="Тестовый альт"></div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__row"></div>
-        <div class="footer__bottom"><span>© 2018 - 2020 GP-CARD </span><a class="footer__bottom-web2" href="https://web2.ru" target="_blank" title="Переход на сайт web2.ru"> 
+        <div class="footer__row"><a class="logo" href="index.html"><b>МЕТ ПРОМ ЛОМ</b><span>Прием металлолома</span></a>
+          <div class="footer__nav">
+            <nav class="nav">
+              <ul>
+                    <li><a href="uslugi.html"><span>Услуги</span></a></li>
+                    <li><a href="ceny.html"><span>Цены</span></a></li>
+                    <li><a href="akcii.html"><span>Акции</span></a></li>
+                    <li><a href="kontakty.html"><span>Контакты</span></a></li>
+              </ul>
+            </nav>
+            <button class="button">Оставить заявку</button><a href="tel:79266977249">+7 926 697-72-49</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container"><span>© 2021 Метпромлом</span><a class="footer__bottom-web2" href="https://web2.ru" target="_blank" title="Переход на сайт web2.ru"> 
             <svg width="24" height="24">
               <use href="./img/sprites/sprite.svg#web2ru"></use>
             </svg><span>Разработка сайта web2.ru</span></a></div>
