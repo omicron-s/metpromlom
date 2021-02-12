@@ -736,6 +736,7 @@ small {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding-top: 15px;
   max-width: 1040px;
   height: 116px;
   margin-left: auto;
@@ -1110,10 +1111,6 @@ small {
 
 .calc__left .title {
   margin-bottom: 40px;
-}
-
-.calc__left .button {
-  margin: 0 auto;
 }
 
 .calc__inputs {
@@ -2455,6 +2452,10 @@ html.fixed .modal-overlay {
     text-align: center;
   }
 
+  .calc__left .button {
+    margin: 0 auto;
+  }
+
   .calc__inputs {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -2541,6 +2542,7 @@ html.fixed .modal-overlay {
     justify-content: center;
     margin: 0 0 30px;
     padding: 0;
+    padding-top: 15px;
   }
 
   .questions__subtitle {
