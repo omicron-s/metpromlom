@@ -1799,7 +1799,7 @@ small {
   padding: 80px 0 30px;
   background-image: url("../img/services/bg.svg");
   background-repeat: no-repeat;
-  background-position: center 90%;
+  background-position: center;
 }
 
 .test {
@@ -3172,7 +3172,6 @@ html.fixed .modal-overlay {
   .services-page {
     padding: 50px 0 30px;
     background-size: contain;
-    background-position: center;
   }
 
   .services {
