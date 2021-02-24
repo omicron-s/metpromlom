@@ -1023,7 +1023,7 @@ small {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   position: sticky;
-  top: 0;
+  top: 15px;
   margin-left: 25px;
 }
 
@@ -2436,7 +2436,7 @@ small {
 }
 
 .prices .cta-form {
-  top: 0;
+  top: 15px;
   position: sticky;
   -ms-flex-negative: 0;
   flex-shrink: 0;
