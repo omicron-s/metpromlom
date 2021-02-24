@@ -1047,10 +1047,6 @@ small {
   margin-bottom: 50px;
 }
 
-.about__block.adv ul {
-  padding-left: 30px;
-}
-
 .about__block.adv li:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -1062,17 +1058,9 @@ small {
   font-size: 20px;
   color: #e93622;
   margin-bottom: 1.2em;
-  margin-left: -30px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.about__block.adv b::before {
-  content: url("../img/icons/zvezda-sm.svg");
-  width: 25px;
-  height: 25px;
-  margin-right: 5px;
 }
 
 .about__block.vip h2 {
@@ -1171,7 +1159,6 @@ small {
 }
 
 .vip-hidden {
-  padding-left: 110px;
   display: none;
   color: rgba(37, 37, 51, 0.9);
   font-size: 16px;
@@ -1182,6 +1169,7 @@ small {
 }
 
 .about__block.qa button {
+  text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3346,6 +3334,25 @@ html.fixed .modal-overlay {
 }
 
 @media (min-width: 768px) {
+  .about__block.adv ul {
+    padding-left: 30px;
+  }
+
+  .about__block.adv b {
+    margin-left: -30px;
+  }
+
+  .about__block.adv b::before {
+    content: url("../img/icons/zvezda-sm.svg");
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+
+  .vip-hidden {
+    padding-left: 110px;
+  }
+
   .form__row .button {
     margin-left: 6px;
   }
@@ -3548,6 +3555,15 @@ html.fixed .modal-overlay {
 @media (max-width: 1023px) {
   .title {
     font-size: 48px;
+  }
+
+  .about {
+    padding: 40px 0 50px;
+  }
+
+  .about .container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .about .cta-form {
@@ -3952,6 +3968,72 @@ html.fixed .modal-overlay {
   .input input,
   .input select {
     height: 50px;
+  }
+
+  .about {
+    padding: 25px 0 0;
+  }
+
+  .about__left h2 {
+    font-size: 20px;
+  }
+
+  .about__block {
+    margin-bottom: 40px;
+  }
+
+  .about__block p {
+    font-size: 16px;
+  }
+
+  .about__block.adv b {
+    font-size: 18px;
+  }
+
+  .about__block.vip h2 {
+    margin-bottom: 25px;
+  }
+
+  .about__block.vip li {
+    margin-bottom: 30px;
+  }
+
+  .vip-img {
+    margin-right: 15px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .vip-text__bottom {
+    font-size: 16px;
+  }
+
+  .vip-text__bottom .arrow {
+    font-size: 14px;
+  }
+
+  .vip-text b {
+    font-size: 16px;
+  }
+
+  .about__block.qa button {
+    padding: 0 44px 0 15px;
+  }
+
+  .about__block.qa button::before {
+    right: 15px;
+    width: 14px;
+  }
+
+  .about__block.qa button::after {
+    right: 22px;
+    height: 14px;
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+  }
+
+  .qa_hidden {
+    padding: 0 15px;
   }
 
   .add {
