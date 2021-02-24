@@ -1131,6 +1131,7 @@ small {
 }
 
 .vip-text__bottom {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2429,17 +2430,17 @@ small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
 }
 
 .prices .cta-form {
-  top: 15px;
-  position: sticky;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  position: sticky;
+  top: 15px;
   margin-left: 25px;
 }
 
