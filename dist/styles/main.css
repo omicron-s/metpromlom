@@ -725,12 +725,17 @@ small {
   display: flex;
 }
 
+.nav a.active {
+  color: #e93622 !important;
+  pointer-events: none;
+}
+
 .broads {
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   font-size: 14px;
   letter-spacing: 0;
 }
@@ -1002,7 +1007,6 @@ small {
 .about {
   background-color: #fffbf3;
   padding: 90px 0 130px;
-  color: #252533;
 }
 
 .about .container {
@@ -1012,11 +1016,14 @@ small {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
 }
 
 .about .cta-form {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  position: sticky;
+  top: 0;
   margin-left: 25px;
 }
 
@@ -1025,6 +1032,7 @@ small {
   -ms-flex: 0 1 750px;
   flex: 0 1 750px;
   font-weight: 700;
+  color: #252533;
 }
 
 .about__left h2 {
@@ -1181,6 +1189,8 @@ small {
   height: 86px;
   padding: 0 58px 0 24px;
   background-color: #f5f1e9;
+  font-weight: 700;
+  color: rgba(37, 37, 51, 0.8);
 }
 
 .about__block.qa button.open::after {
@@ -1220,6 +1230,8 @@ small {
 }
 
 .qa_hidden p:last-child {
+  color: #252533;
+  font-weight: 400;
   margin-bottom: 0;
 }
 
@@ -2417,12 +2429,15 @@ small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .prices .cta-form {
+  top: 0;
+  position: sticky;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-left: 25px;
@@ -3093,7 +3108,8 @@ small {
 }
 
 .footer__nav .nav li {
-  padding: 0 15px;
+  white-space: nowrap;
+  padding: 0 10px;
 }
 
 .footer__nav .button:not([disabled]):hover {
@@ -3209,7 +3225,11 @@ small {
 }
 
 .header__nav .nav li {
-  padding: 0 15px;
+  padding: 0 10px;
+}
+
+.header__nav .nav a {
+  white-space: nowrap;
 }
 
 .header__nav .nav a:not([disabled]):hover {

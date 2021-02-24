@@ -352,6 +352,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+$('.nav a').each(function () {
+  if (this.href == location.href) {
+    $(this).addClass('active');
+  }
+});
 $(function () {
   svg4everybody_dist_svg4everybody_min__WEBPACK_IMPORTED_MODULE_7___default()();
   $('svg').attr('focusable', 'false');
