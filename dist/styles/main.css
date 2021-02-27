@@ -2304,10 +2304,13 @@ small {
   border-top: 2px solid #e93622;
 }
 
+.price-list > .container .price-list__table {
+  margin-bottom: 60px;
+}
+
 .price-list__table {
   overflow-x: auto;
   max-width: 840px;
-  margin-bottom: 60px;
 }
 
 .price-list__table li {
@@ -2360,7 +2363,7 @@ small {
   -webkit-box-flex: 3;
   -ms-flex: 3 1 480px;
   flex: 3 1 480px;
-  min-width: 360px;
+  min-width: 420px;
 }
 
 .price-list__table-perc {
@@ -2369,7 +2372,7 @@ small {
   flex: 0 2 155px;
   -ms-flex-item-align: center;
   align-self: center;
-  min-width: 115px;
+  min-width: 85px;
 }
 
 .price-list__table-perc li {
@@ -2385,14 +2388,13 @@ small {
 
 .price-list__table-perc li:nth-child(even) {
   border-left: 2px solid #fffbf3;
-  border-right: 2px solid #fffbf3;
 }
 
 .price-list__table-cost {
   -webkit-box-flex: 2;
   -ms-flex: 2 1 200px;
   flex: 2 1 200px;
-  min-width: 150px;
+  min-width: 200px;
 }
 
 .price-list__table-cost li:first-child {
@@ -2401,11 +2403,16 @@ small {
   align-items: center;
 }
 
+.price-list__table-cost li:nth-child(even) {
+  border-left: 2px solid #fffbf3;
+}
+
 .price-list__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 840px;
+  margin-top: 60px;
 }
 
 .price-list__row .button {
@@ -4714,7 +4721,7 @@ html.fixed .modal-overlay {
     padding: 25px 0;
   }
 
-  .price-list__table {
+  .price-list > .container .price-list__table {
     margin-bottom: 30px;
   }
 
@@ -4729,6 +4736,7 @@ html.fixed .modal-overlay {
   .price-list__row {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
 
   .price-list__row .button {
