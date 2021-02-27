@@ -251,6 +251,34 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "../views/blocks/shares/shares.js":
+/*!****************************************!*\
+  !*** ../views/blocks/shares/shares.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "../../node_modules/swiper/swiper.esm.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__["Navigation"]]);
+  var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.shares__block.bonus .swiper-container', {
+    slidesPerView: 1,
+    speed: 400,
+    centeredSlides: true,
+    spaceBetween: 60,
+    autoHeight: true,
+    navigation: {
+      prevEl: '.shares__block.bonus .swiper-button-prev',
+      nextEl: '.shares__block.bonus .swiper-button-next'
+    }
+  });
+});
+
+/***/ }),
+
 /***/ "../views/blocks/where/services.js":
 /*!*****************************************!*\
   !*** ../views/blocks/where/services.js ***!
@@ -336,8 +364,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_where_services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @blocks/where/services */ "../views/blocks/where/services.js");
 /* harmony import */ var _blocks_prices_prices__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @blocks/prices/prices */ "../views/blocks/prices/prices.js");
 /* harmony import */ var _blocks_about_about__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @blocks/about/about */ "../views/blocks/about/about.js");
-/* harmony import */ var svg4everybody_dist_svg4everybody_min__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! svg4everybody/dist/svg4everybody.min */ "../../node_modules/svg4everybody/dist/svg4everybody.min.js");
-/* harmony import */ var svg4everybody_dist_svg4everybody_min__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(svg4everybody_dist_svg4everybody_min__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _blocks_shares_shares__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @blocks/shares/shares */ "../views/blocks/shares/shares.js");
+/* harmony import */ var svg4everybody_dist_svg4everybody_min__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! svg4everybody/dist/svg4everybody.min */ "../../node_modules/svg4everybody/dist/svg4everybody.min.js");
+/* harmony import */ var svg4everybody_dist_svg4everybody_min__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(svg4everybody_dist_svg4everybody_min__WEBPACK_IMPORTED_MODULE_8__);
 // import $ from 'jquery';
 // import 'core-js/stable/array/for-each';
 // import 'core-js/stable/array/includes';
@@ -352,19 +381,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 $('.nav a').each(function () {
   if (this.href == location.href) {
     $(this).addClass('active');
   }
 });
 $(function () {
-  svg4everybody_dist_svg4everybody_min__WEBPACK_IMPORTED_MODULE_7___default()();
+  svg4everybody_dist_svg4everybody_min__WEBPACK_IMPORTED_MODULE_8___default()();
   $('svg').attr('focusable', 'false');
   Object(_layouts_header_header__WEBPACK_IMPORTED_MODULE_2__["default"])();
   Object(_blocks_advantages_advantages__WEBPACK_IMPORTED_MODULE_3__["default"])();
   Object(_blocks_where_services__WEBPACK_IMPORTED_MODULE_4__["default"])();
   Object(_blocks_prices_prices__WEBPACK_IMPORTED_MODULE_5__["default"])();
   Object(_blocks_about_about__WEBPACK_IMPORTED_MODULE_6__["default"])();
+  Object(_blocks_shares_shares__WEBPACK_IMPORTED_MODULE_7__["default"])();
 });
 
 /***/ })
