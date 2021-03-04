@@ -30,12 +30,31 @@
                     <li><a href="kompaniya.html"><span>О нас</span></a></li>
               </ul>
             </nav>
-            <button class="button">Оставить заявку</button><a href="tel:79266977249">+7 926 697-72-49</a>
+            <button class="button" data-modal="form">Оставить заявку</button><a href="tel:79266977249">+7 926 697-72-49</a>
           </div><a class="header__row-img" href="tel:79266977249"> <img src="img/header/tel.png" alt="Позвонить на номер: +7 926 697-72-49" title="Позвонить на номер: +7 926 697-72-49"></a>
         </div>
       </div>
     </header>
     <div class="modal-overlay"></div>
+    <div class="modal modal-form" data-modal="form" role="dialog" data-no-focus-lock>
+      <div class="modal__content"><b class="modal__title">Заказать звонок</b>
+        <div class="modal__inputs">
+          <input type="text" placeholder="ФИО">
+          <input type="text" placeholder="Телефон">
+          <input type="email" placeholder="Почта">
+        </div>
+        <label class="modal__file">
+          <svg>
+            <use href="/img/sprites/sprite.svg#fuse"></use>
+          </svg>
+          <input type="file"><b>Прикрепить фаил </b>
+        </label><small>Нажимая на кнопку «Оcтавить заявку», я подтверждаю, что ознакомился с соглашением на обработку <a href="#">персональных данных</a></small>
+        <button class="button button--red">Отправить</button>
+        <div class="modal__btn">
+          <button class="button-close" title="Закрыть" aria-label="Закрыть"></button>
+        </div>
+      </div>
+    </div>
     <div class="heading-sm ceny">
       <div class="container"> 
         <ul class="broads">
@@ -484,7 +503,7 @@
                     <li><a href="kompaniya.html"><span>О нас</span></a></li>
               </ul>
             </nav>
-            <button class="button">Оставить заявку</button><a href="tel:79266977249">+7 926 697-72-49</a>
+            <button class="button" data-modal="form">Оставить заявку</button><a href="tel:79266977249">+7 926 697-72-49</a>
           </div>
         </div>
       </div>

@@ -30,12 +30,31 @@
                     <li><a href="kompaniya.html"><span>О нас</span></a></li>
               </ul>
             </nav>
-            <button class="button">Оставить заявку</button><a href="tel:79266977249">+7 926 697-72-49</a>
+            <button class="button" data-modal="form">Оставить заявку</button><a href="tel:79266977249">+7 926 697-72-49</a>
           </div><a class="header__row-img" href="tel:79266977249"> <img src="img/header/tel.png" alt="Позвонить на номер: +7 926 697-72-49" title="Позвонить на номер: +7 926 697-72-49"></a>
         </div>
       </div>
     </header>
     <div class="modal-overlay"></div>
+    <div class="modal modal-form" data-modal="form" role="dialog" data-no-focus-lock>
+      <div class="modal__content"><b class="modal__title">Заказать звонок</b>
+        <div class="modal__inputs">
+          <input type="text" placeholder="ФИО">
+          <input type="text" placeholder="Телефон">
+          <input type="email" placeholder="Почта">
+        </div>
+        <label class="modal__file">
+          <svg>
+            <use href="/img/sprites/sprite.svg#fuse"></use>
+          </svg>
+          <input type="file"><b>Прикрепить фаил </b>
+        </label><small>Нажимая на кнопку «Оcтавить заявку», я подтверждаю, что ознакомился с соглашением на обработку <a href="#">персональных данных</a></small>
+        <button class="button button--red">Отправить</button>
+        <div class="modal__btn">
+          <button class="button-close" title="Закрыть" aria-label="Закрыть"></button>
+        </div>
+      </div>
+    </div>
     <div class="heading"> 
       <div class="container"> 
         <h1 class="title">Кто шагает дружно в ряд? <br>Это – смена комсомола,<br> идет сдавать металлолом!</h1>
@@ -66,30 +85,30 @@
             <h2 class="title title--red">какие услуги мы оказываем</h2>
             <div class="swiper-container" id="services__list"> 
               <div class="swiper-wrapper services__list">
-                <div class="swiper-slide service-card"><a class="service-card__link" href="uslugi-cherniy.html">
-                    <div class="service-card__content">
-                      <div class="service-card__img"><img src="img/services/gornilo.png" alt=""/></div><span>Прием черного металлолома</span>
-                    </div></a></div>
-                <div class="swiper-slide service-card"><a class="service-card__link" href="#">
-                    <div class="service-card__content">
-                      <div class="service-card__img"><img src="img/services/zoloto.png" alt=""/></div><span>Прием цветного металлолома</span>
-                    </div></a></div>
-                <div class="swiper-slide service-card"><a class="service-card__link" href="#">
-                    <div class="service-card__content">
-                      <div class="service-card__img"><img src="img/services/relsa.png" alt=""/></div><span>Прием других<br>металлов</span>
-                    </div></a></div>
-                <div class="swiper-slide service-card"><a class="service-card__link" href="#">
-                    <div class="service-card__content">
-                      <div class="service-card__img"><img src="img/services/track.png" alt=""/></div><span>Демонтаж <br>и вывоз металла</span>
-                    </div></a></div>
-                <div class="swiper-slide service-card"><a class="service-card__link" href="#">
-                    <div class="service-card__content">
-                      <div class="service-card__img"><img src="img/services/rezka.png" alt=""/></div><span>Демонтаж и резка металлоконструкций</span>
-                    </div></a></div>
-                <div class="swiper-slide service-card"><a class="service-card__link" href="#">
-                    <div class="service-card__content">
-                      <div class="service-card__img"><img src="img/services/provod.png" alt=""/></div><span>Прием кабельного<br>лома</span>
-                    </div></a></div>
+                    <div class="swiper-slide service-card"><a class="service-card__link" href="uslugi-cherniy.html">
+                        <div class="service-card__content">
+                          <div class="service-card__img"><img src="img/services/gornilo.png" alt=""></div><span>Прием черного металлолома</span>
+                        </div></a></div>
+                    <div class="swiper-slide service-card"><a class="service-card__link" href="#">
+                        <div class="service-card__content">
+                          <div class="service-card__img"><img src="img/services/zoloto.png" alt=""></div><span>Прием цветного металлолома</span>
+                        </div></a></div>
+                    <div class="swiper-slide service-card"><a class="service-card__link" href="#">
+                        <div class="service-card__content">
+                          <div class="service-card__img"><img src="img/services/relsa.png" alt=""></div><span>Прием других<br>металлов</span>
+                        </div></a></div>
+                    <div class="swiper-slide service-card"><a class="service-card__link" href="#">
+                        <div class="service-card__content">
+                          <div class="service-card__img"><img src="img/services/track.png" alt=""></div><span>Демонтаж <br>и вывоз металла</span>
+                        </div></a></div>
+                    <div class="swiper-slide service-card"><a class="service-card__link" href="#">
+                        <div class="service-card__content">
+                          <div class="service-card__img"><img src="img/services/rezka.png" alt=""></div><span>Демонтаж и резка металлоконструкций</span>
+                        </div></a></div>
+                    <div class="swiper-slide service-card"><a class="service-card__link" href="#">
+                        <div class="service-card__content">
+                          <div class="service-card__img"><img src="img/services/provod.png" alt=""></div><span>Прием кабельного<br>лома</span>
+                        </div></a></div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -205,7 +224,7 @@
                     <li><a href="kompaniya.html"><span>О нас</span></a></li>
               </ul>
             </nav>
-            <button class="button">Оставить заявку</button><a href="tel:79266977249">+7 926 697-72-49</a>
+            <button class="button" data-modal="form">Оставить заявку</button><a href="tel:79266977249">+7 926 697-72-49</a>
           </div>
         </div>
       </div>
