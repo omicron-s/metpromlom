@@ -807,6 +807,10 @@ small {
   padding: 0 15px;
   font-weight: 700;
   text-transform: uppercase;
+  -webkit-transition: -webkit-transform .3s, -webkit-box-shadow .3s;
+  transition: -webkit-transform .3s, -webkit-box-shadow .3s;
+  transition: transform .3s, box-shadow .3s;
+  transition: transform .3s, box-shadow .3s, -webkit-transform .3s, -webkit-box-shadow .3s;
 }
 
 .button--red {
@@ -818,7 +822,10 @@ small {
 }
 
 .button--red:not([disabled]):hover {
-  background-color: #ee6050;
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .input {
@@ -2168,10 +2175,6 @@ small {
 
 .heading .title {
   margin-bottom: 150px;
-}
-
-.heading .button:not([disabled]):hover {
-  background-color: #ee6050;
 }
 
 .heading::after,
@@ -4314,11 +4317,6 @@ html.fixed .modal-overlay {
     color: #e93622;
   }
 
-  .heading .button:not([disabled]):hover {
-    background-color: white;
-    color: #ee6050;
-  }
-
   .heading::after {
     -webkit-transform: translate(40%, 28%) scale(0.4);
     transform: translate(40%, 28%) scale(0.4);
@@ -5207,10 +5205,6 @@ html.fixed .modal-overlay {
 }
 
 @media (min-width: 1024px) and (max-width: 1299px) {
-  .price-banner .button:hover::before {
-    background-color: #ee6050;
-  }
-
   .price-banner .button::after,
   .price-banner .button::before {
     content: "";
